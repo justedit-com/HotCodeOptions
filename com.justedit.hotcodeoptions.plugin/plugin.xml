@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabs">
+      <tab
+            class="com.justedit.hotcodeoptions.HotCodeTab"
+            group="org.eclipse.jdt.debug.ui.launchConfigurationTabGroup.localJavaApplication"
+            id="com.justedit.hotcodeoptions.hotCodeTab"
+            name="Hot Code">
+            <placement
+                  after="org.eclipse.debug.ui.commonTab">
+            </placement>
+      </tab>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.justedit.hotcodeoptions.Activator">
+      </startup>
+   </extension>
+</plugin>
